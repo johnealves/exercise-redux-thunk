@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchAPI } from '../actions';
 
@@ -17,9 +17,9 @@ class Button extends Component {
   }
 }
 
-Button.propTypes = {
-  getImage: PropTypes.func.isRequired,
-};
+// Button.propTypes = {
+//   getImage: PropTypes.func.isRequired,
+// };
 
 const mapDispatchToProps = (dispatch) => ({
   getImage: () => dispatch(fetchAPI()),
